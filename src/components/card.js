@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from "gatsby";
 
 const Card = ({card}) => {
-    return <div style={{border: "1px solid black", padding: "5px", maxWidth: "300px"}}>
+    return <div style={{margin: '5px', border: "1px solid black", padding: "5px", maxWidth: "300px"}}>
         <Link to={`/cards/${card.id}`}>
         <h1>{card.name}</h1>
         <h2>{card.stage}</h2>
