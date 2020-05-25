@@ -15,11 +15,15 @@ export default function Home() {
                 plus
                 stage
                 steps
+                timeNeeded {
+                    min
+                    max
+                }
               }
           }
         }
   `)
 
     return <div>
-        {data.allCardsYaml.nodes.map(card => <Link to={`/cards/${card.id}`}><Card card={card} /></Link>)}</div>
+        {data.allCardsYaml.nodes.map(card => <Card card={card} />)}</div>
 }

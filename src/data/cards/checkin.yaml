@@ -2,16 +2,16 @@
 name: Check-In
 stage: set-the-stage
 timeNeeded:
-  - min: 5
-  - max: 10
+  min: 5
+  max: 10
 steps:
   - Poni una domanda a cui ogni persona puo' rispondere con una parola o una frase breve. Ad esempio 'In una parola o due, quali sono le tue speranze per la retrospettiva?'
-    - Si può dire 'passo'.
-    - Ascolta le risposte di ognuno senza offrire complimenti.
+  - Si può dire 'passo'.
+  - Ascolta le risposte di ognuno senza offrire complimenti.
 needSolved: Migliorare il focus sulla retrospettiva.
 plus:
   - non incentiva le persone che non vogliono parlare a farlo.
-    - immediatezza e facilità d'uso.
+  - immediatezza e facilità d'uso.
 difficulty : 1
 materials:
   - domanda preparata
