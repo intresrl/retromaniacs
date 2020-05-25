@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import {useStaticQuery, graphql, Link} from "gatsby"
 import Card from "../components/card";
 
 export default function Home() {
@@ -20,5 +20,6 @@ export default function Home() {
         }
   `)
 
-    return <div>{data.allCardsYaml.nodes.map(card => <Card card={card} />)}</div>
+    return <div>
+        {data.allCardsYaml.nodes.map(card => <Link to={`/cards/${card.id}`}><Card card={card} /></Link>)}</div>
 }
