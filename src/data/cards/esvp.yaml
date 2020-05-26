@@ -1,0 +1,18 @@
+---
+name: ESVP
+stage: set-the-stage
+timeNeeded:
+  min: 10
+  max: 15
+steps:
+  - Spiegare il significato dei 4 termini (Explorer, Shopper, Vacationer, Prisoner).
+  - Ognuno segna, in maniera anonima, quale dei quattro lo rappresenta di più.
+  - Collezionare i risultati.
+  - Condurre una breve discussione su quanto emerso.
+needSolved: Farsi un idea sulla mentalità con cui le persone affrontano la retrospettiva.
+plus:
+  - Aiuta a comprendere il mood delle persone.
+  - Artificioso
+difficulty : 2
+materials:
+  - carta e penna
