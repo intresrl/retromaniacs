@@ -1,0 +1,24 @@
+---
+name: Force Field Analysis
+stage:
+  - generate-insight
+timeNeeded:
+  min: 45
+  max: 60
+steps:
+  - Introdurre l'attività.
+  - Dividersi in gruppi.
+  - Identificare dei fattori positivi per X minuti.
+  - Reporting Round robin.
+  - Identificare dei fattori negativi per X minuti.
+  - Reporting Round robin.
+  - Misurazione del livello di "forza".
+  - Cercare di capire come rafforzare i fattori positivi.
+  - Cercare di capire come ridurre (la potenza) dei fattori negativi
+needSolved: Esaminare quali fattori all'interno del team ci stanno aiutando e quali ci stanno frenando.
+plus:
+  - "Si può utilizzare in combinazione con: Five Whys e Fishbone."
+  - Prospettive diverse.
+difficulty: 3
+materials:
+  - Ora per capire cosa va e non va faremo un attività di "Force field analysis", ci divideremo in gruppi e cercheremo di capire per X minuti quali sono i fattori positivi alla crescita del team. Dopo averli trovati li riporteremo sulla lavagna e gli daremo una stima di "forza" e ripeteremo lo stesso processo per i fattori frenanti. Una volta individuati anche questi cercheremo di capire come aumentare la forza dei fattori trainanti e diminuire quella dei fattori frenanti.

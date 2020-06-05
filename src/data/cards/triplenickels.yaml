@@ -1,0 +1,20 @@
+---
+name: Triple Nickels
+stage:
+  - gather-data
+  - decide-what-to-do
+timeNeeded:
+  min: 30
+  max: 60
+steps:
+  - Dividere in gruppi.
+  - "1 round: ognuno scrive idee sui postit (almeno 5)."
+  - Dopo 5 min passi i postit a destra e ognuno scrive idee che nascono da quelle prima o che le estendono.
+  - Ripeti fino a quanto vuoi (fino a un giro completo).
+  - L'output viene letto e discusso nelle fasi successive.
+needSolved: Generare idee di azioni, scoprire argomenti importanti circa la storia del progetto.
+plus:
+  - Lascia spazio a tutti.
+difficulty: 1
+materials:
+  - Carta e penna per tutti.

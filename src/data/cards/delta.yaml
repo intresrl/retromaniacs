@@ -1,0 +1,19 @@
+---
+name: +/Delta
+stage:
+  - close-the-retrospective
+timeNeeded:
+  min: 10
+  max: 20
+steps:
+  - Introduzione, tempi e grafico.
+  - Ognuno grida punti di forza (plus) e miglioramento (delta), il f. li trascrive.
+  - Attendere un pochino.
+  - Ringraziare per il feedback.
+needSolved: "Retrospettiva sulla retrospettiva: identificare punti di forza e di miglioramento"
+plus:
+  - Fornisce feedback al facilitatore.
+difficulty: 1
+materials:
+  - Flipchart/lavagna con forma a t.
+  - Pennarelli.

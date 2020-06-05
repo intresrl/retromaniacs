@@ -1,0 +1,17 @@
+---
+name: Return on Time Invested
+stage:
+  - close-the-retrospective
+timeNeeded:
+  min: 10
+  max: 10
+steps:
+  - Spiegazione ed introduzione ai grafici.
+  - Raccogliere i voti chiedendo a tutti a turno.
+  - Chiedere approfondimenti sul feedback (cosa è andato bene, e cosa male)
+needSolved: Feedback dalla prospettiva dei membri del team sull'efficacia della retrospettiva.
+plus:
+  - n/a
+difficulty: 1
+materials:
+  - Grafico di gradimento, e grafico per conteggio voti.

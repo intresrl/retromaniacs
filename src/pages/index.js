@@ -1,5 +1,5 @@
 import React from "react"
-import {useStaticQuery, graphql, Link} from "gatsby"
+import {useStaticQuery, graphql} from "gatsby"
 import Card from "../components/card";
 import "../../static/style.css"
 

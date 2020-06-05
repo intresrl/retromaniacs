@@ -1,0 +1,20 @@
+---
+name: Fishbone
+stage:
+  - generate-insight
+timeNeeded:
+  min: 30
+  max: 60
+steps:
+  - Disegnare il diagramma e Scrivere il problema sulla testa del pesce, ogni lisca è una delle 5 W.
+  - Data la problematica, investigare con il paradigma delle 5 W prendendo come oggetto una categoria di esempio.
+  - Ripetere per ogni categoria.
+  - Per ogni problema identificato, mettere un postiit sulla lisca del pesce coerente.
+  - Aggiungere dei rami alla lisca per ogni risposta lla domanda "Perchè succede ciò" per ogni problema identificato e fermarsi quando le cause sono al di fuori del controllo del team.
+  - Cercare i problemi che sorgono per più categorie e usarli nella prossima fase "Decide what to do".
+needSolved: Indentificare la radice storica di un problema.
+plus:
+  - "Si può utilizzare in combinazione con: Five Whys"
+difficulty: 3
+materials:
+  - Markers + post it, whiteboard con spina di pesce disegnata con esempi per ogni categoria.

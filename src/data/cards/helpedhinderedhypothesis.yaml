@@ -1,0 +1,17 @@
+---
+name: Helped, Hindered, Hypothesis
+stage:
+  - generate-insight
+timeNeeded:
+  min: 5
+  max: 10
+steps:
+  - Spiegazione ed introduzione ai grafici.
+  - Scrivere i feed back sui post-it, e agganciarli al grafico desiderato.
+  - Incontrare i membri del team al termine per eventuali chiarimenti.
+needSolved: Feedback dai membri del team per migliorare le attività.
+plus:
+  - n/a
+difficulty: 1
+materials:
+  - Tre flipchart per Helped, Hindered e Hypothesis, sticky note.

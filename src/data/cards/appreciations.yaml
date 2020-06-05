@@ -1,0 +1,17 @@
+---
+name: Appreciations
+stage:
+  - close-the-retrospective
+timeNeeded:
+  min: 5
+  max: 30
+steps:
+  - Spiegazione.
+  - "Esempio di appreciation: il F. inizia con un esempio vero."
+  - Chi vuole può parlare a ruota libera
+needSolved: Permettere di notare e apprezzarsi a vicenda. Terminare la retrospettiva positivamente.
+plus:
+  - Resetta il mood se i toni della retrospettiva sono stati accesi.
+difficulty: 1
+materials:
+  - (eventualmente scrivere il template su un flipchart)

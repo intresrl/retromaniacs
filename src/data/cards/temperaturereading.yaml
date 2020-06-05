@@ -1,0 +1,17 @@
+---
+name: Temperature Reading
+stage:
+  - set-the-stage
+  - close-the-retrospective
+timeNeeded:
+  min: 5
+  max: 30
+steps:
+  - Spiegazione e introduzione al poster e le 5 categorie.
+  - lasciare tempo per far parlare la gente (contare mentalmente)
+needSolved: Fare il punto e allinearsi.
+plus:
+  - Fornisce feedback al facilitatore.
+difficulty: 1
+materials:
+  - Poster con le 5 categorie (appreciations, puzzles, complaints with recommendations, new information, hopes and wishes).
