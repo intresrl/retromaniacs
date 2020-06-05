@@ -1,0 +1,19 @@
+---
+name: Color Code Dots
+stage:
+  - gather-data
+timeNeeded:
+  min: 5
+  max: 20
+steps:
+  - si parte da una rappresentazione di tutti gli eventi
+  - Distribuire ad ognuno ha da sette a dieci pallini colorati
+  - Spiegare il significato dei colori (alta energia, bassa energia)
+  - Ogni persona etichetta i momenti che identifica come alta o bassa energia
+  - Come variazione i colori indicano momenti positivi o negativi
+needSolved: Evidenziare come le persone hanno vissuto particolari eventi
+plus:
+  - Combinabile con Timeline per raccogliere dati su sentimenti sul lungo periodo
+difficulty : 1
+materials:
+  - Puntini adesivi

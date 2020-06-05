@@ -1,6 +1,7 @@
 ---
 name: Check-In
-stage: set-the-stage
+stage:
+  - set-the-stage
 timeNeeded:
   min: 5
   max: 10

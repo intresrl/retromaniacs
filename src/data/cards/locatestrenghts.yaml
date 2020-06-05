@@ -1,0 +1,20 @@
+---
+name: Locate Strenghts
+stage:
+  - gather-data
+timeNeeded:
+  min: 15
+  max: 40
+steps:
+  - Introduzione
+  - Formare coppie, possibilmente di persone che non si conoscono e fornire le domande
+  - Il primo fa le domande al secondo e segna i punti chiave
+  - Cambiare ruoli
+  - Proseguire con Identify Themes
+needSolved: Raccogliere fatti ed emozioni su lungo periodo, identificando punti di forza
+plus:
+  - In combinazione con identify themes a seguire, per generare insights (ulteriori 20-40 minuti)
+  - Fornisce bilanciamento quando l'iterazione è andata male
+difficulty : 1
+materials:
+  - preparare le domande in più copie

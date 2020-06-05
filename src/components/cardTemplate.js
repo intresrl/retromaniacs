@@ -28,7 +28,7 @@ const CardTemplate = (props) => {
 
     return <div style={{border: "1px solid black", padding: "5px", maxWidth: "300px"}}>
         <h1>{card.name}</h1>
-        <h2>{card.stage}</h2>
+        <h2>{card.stage.join(",")}</h2>
         <h3>Props</h3>
         <p>{`Tempo: da ${card.timeNeeded.min} a ${card.timeNeeded.max} minuti`}</p>
         <p>{`Difficoltà ${card.difficulty}`}</p>

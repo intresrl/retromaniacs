@@ -1,6 +1,7 @@
 ---
 name: ESVP
-stage: set-the-stage
+stage:
+  - set-the-stage
 timeNeeded:
   min: 10
   max: 15

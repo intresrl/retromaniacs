@@ -1,0 +1,23 @@
+---
+name: Mad Sad Glad
+stage:
+  - gather-data
+timeNeeded:
+  min: 20
+  max: 30
+steps:
+  - Introduzione
+  - Dare tempo per scrivere i postit legati alle varie categorie
+  - Ogni persona attacca i postit sul poster
+  - Far raggruppare i postit in cluster
+  - Far dare un nome da ogni cluster
+  - Debriefing
+needSolved: Far uscire fatti legati ad emozioni
+plus:
+  - Mette in mostra l'aspetto emotivo
+  - Come variazione, usare Prouds e Sorries in casi di tensioni emotive o conflitti noti
+difficulty : 1
+materials:
+  - Postit colorati (3 colori)
+  - Tabellone con le categorie Mad Sad Glad con un postit del colore relativo
+  - Pennarelli
