@@ -25,6 +25,6 @@ export default function Home() {
         }
   `)
 
-    return <div style={{display: 'flex', padding: "5px", textTransform: "none"}}>
+    return <div style={{display: 'flex', padding: "5px", textTransform: "none", flexWrap: "wrap"}}>
         {data.allCardsYaml.nodes.map(card => <Card card={card} />)}</div>
 }
