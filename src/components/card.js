@@ -31,6 +31,18 @@ const Card = ({card, onClick}) => {
                 <h2>{card.stage.join(", ")}</h2>
                 <p>{`Tempo: da ${card.timeNeeded.min} a ${card.timeNeeded.max} minuti`}</p>
                 <p>{`Scopo ${card.needSolved}`}</p>
+                <h3>Steps</h3>
+                <ul>
+                    {card.steps.map(step => <li>{step}</li>)}
+                </ul>
+                <h3>Plus</h3>
+                <ul>
+                    {card.plus.map(step => <li>{step}</li>)}
+                </ul>
+                <h3>Materiali</h3>
+                <ul>
+                    {card.materials.map(step => <li>{step}</li>)}
+                </ul>
             </div>
         </Dialog>
 
