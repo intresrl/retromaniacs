@@ -27,7 +27,7 @@ const Card = ({card}) => {
 
     return <div className={classes.root} style={{margin: '5px', border: "1px solid black", padding: "5px", maxWidth: "300px"}}>
 
-        <Dialog open={modalState.open}>
+        <Dialog open={modalState} onClose={() => {setModalState(false)}}>
             <div className={classes.modal}>
                 <h1>{card.name}</h1>
                 <h2>{card.stage.join(", ")}</h2>
