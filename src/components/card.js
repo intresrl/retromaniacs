@@ -1,9 +1,7 @@
 import React, { useState } from "react"
-import {Link} from "gatsby";
 import Icon from "@material-ui/core/Icon"
 import { makeStyles } from "@material-ui/core/styles"
 import Dialog from "@material-ui/core/Dialog"
-import CardTemplate from "./cardTemplate"
 
 const useStyles = makeStyles({
     root: {
