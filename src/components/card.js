@@ -22,7 +22,9 @@ const Card = ({card, onClick, stage}) => {
     const classes = useStyles();
     const [modalState, setModalState] = useState(false); // {open: boolean, cardId : string}
 
-    const isBlack = card.stage.includes(stage);
+    let isBlack = true;
+    if (stage)
+        isBlack = card.stage.includes(stage);
 
     return <div onClick={onClick} className={classes.root} style={{
         margin: '5px',
