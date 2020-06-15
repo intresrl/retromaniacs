@@ -7,7 +7,7 @@ import Icon from "@material-ui/core/Icon"
 const useStyles = makeStyles({
     root: {
         maxWidth: "300px",
-        minWidth: "200px",
+        minWidth: "300px",
         border: "1px solid grey",
         padding: "5px",
         position: "relative"
@@ -170,7 +170,7 @@ function Stage({ stage }) {
     return (
       <span
         style={{
-            backgroundColor: "#EBD04B",
+            backgroundColor: "#66bdb5",
             margin: "0 5px",
             padding: "5px",
             borderRadius: "5px"
