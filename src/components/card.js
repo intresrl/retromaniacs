@@ -1,11 +1,11 @@
-import React, { useState } from "react"
+import React, {useState} from "react"
 import Icon from "@material-ui/core/Icon"
-import { makeStyles } from "@material-ui/core/styles"
+import {makeStyles} from "@material-ui/core/styles"
 import Dialog from "@material-ui/core/Dialog"
 
 const useStyles = makeStyles({
     root: {
-      position: "relative"
+        position: "relative"
     },
     topRight: {
         position: "absolute",
@@ -17,15 +17,26 @@ const useStyles = makeStyles({
     }
 });
 
-const Card = ({card, onClick}) => {
+const Card = ({card, onClick, stage}) => {
 
     const classes = useStyles();
     const [modalState, setModalState] = useState(false); // {open: boolean, cardId : string}
 
+    const isBlack = card.stage.includes(stage);
 
-    return <div onClick={onClick} className={classes.root} style={{margin: '5px', border: "1px solid black", padding: "5px", maxWidth: "300px", minWidth: "300px"}}>
+    return <div onClick={onClick} className={classes.root} style={{
+        margin: '5px',
+        border: "1px solid black",
+        padding: "5px",
+        maxWidth: "300px",
+        minWidth: "300px",
+        color: (isBlack ? "black" : "grey")
+    }}>
 
-        <Dialog open={modalState} onClose={(e) => {e.stopPropagation();setModalState(false)}}>
+        <Dialog open={modalState} onClose={(e) => {
+            e.stopPropagation();
+            setModalState(false)
+        }}>
             <div className={classes.modal}>
                 <h1>{card.name}</h1>
                 <h2>{card.stage.join(", ")}</h2>
