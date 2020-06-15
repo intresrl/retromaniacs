@@ -1,7 +1,7 @@
 ---
 name: Helped, Hindered, Hypothesis
 stage:
-  - generate-insight
+  - close-the-retrospective
 timeNeeded:
   min: 5
   max: 10
