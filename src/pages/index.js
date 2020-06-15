@@ -2,6 +2,7 @@ import React from "react"
 import {useStaticQuery, graphql} from "gatsby"
 import Card from "../components/card";
 import "../../static/style.css"
+import Helmet from "react-helmet"
 
 export default function Home() {
     const data = useStaticQuery(graphql`
@@ -26,5 +27,9 @@ export default function Home() {
   `)
 
     return <div style={{display: 'flex', padding: "5px", textTransform: "none", flexWrap: "wrap"}}>
-        {data.allCardsYaml.nodes.map(card => <Card card={card} />)}</div>
+      <Helmet>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+      </Helmet>
+        {data.allCardsYaml.nodes.map(card => <Card card={card} />)}
+    </div>
 }

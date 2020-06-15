@@ -15,27 +15,32 @@ const useStyles = makeStyles({
     name: {
         textAlign: "center",
         marginBottom: "20px",
-        fontSize: "25px"
+        fontSize: "25px",
+        fontWeight: "600",
+        color: "#303031"
     },
     stage: {
         textAlign: "center",
-        marginBottom: "15px"
+        marginBottom: "5px"
     },
     materials: {
         textAlign: "center",
-        marginBottom: "15px"
+        marginBottom: "8px",
+        fontWeight: "600",
+        color: "#3f3f3f"
     },
     scope: {
         textAlign: "center",
-        marginBottom: "15px",
+        marginBottom: "8px",
         fontSize: "20px",
-        color: "#1A75C4"
+        color: "#5da8a2"
     },
     advantages: {
         textAlign: "center"
     },
     exampleTitle: {
         textAlign: "center",
+        fontSize: "20px",
         marginBottom: "15px"
     },
     example: {
@@ -86,14 +91,7 @@ export default function Card(props) {
                   <Grid item xs={12} className={classes.advantages}>
                       <Materials materials={card.plus}/>
                   </Grid>
-                  <div
-                    style={{
-                        width: "100%",
-                        height: "1px",
-                        backgroundColor: "#1A75C4",
-                        margin: "0 40px 20px 40px"
-                    }}
-                  />
+                  <OurDivider />
                   <Grid item xs={12} className={classes.exampleTitle}>
                       Example
                   </Grid>
@@ -103,15 +101,15 @@ export default function Card(props) {
                   <Grid item xs={12} className={classes.meta}>
                       <Grid container>
                           <Grid item xs={4}>
-                              <div style={{ marginBottom: "10px" }}>Duration</div>
+                              <div style={{ marginBottom: "10px", fontWeight: "600" }}>Duration</div>
                               <div>{card.timeNeeded.min}-{card.timeNeeded.max} min</div>
                           </Grid>
                           <Grid item xs={4}>
-                              <div style={{ marginBottom: "10px" }}>Group</div>
+                              <div style={{ marginBottom: "10px", fontWeight: "600" }}>Group</div>
                               <div>&lt; NaN persons</div>
                           </Grid>
                           <Grid item xs={4}>
-                              <div style={{ marginBottom: "10px" }}>Difficulty</div>
+                              <div style={{ marginBottom: "10px", fontWeight: "600" }}>Difficulty</div>
                               {Array.apply(null, { length: card.difficulty }).map(() => (
                                 <Box enabled={true}/>
                               ))}
@@ -147,9 +145,42 @@ export default function Card(props) {
               <Grid item xs={12} className={classes.advantages}>
                   <Materials materials={card.plus}/>
               </Grid>
+              <OurDivider />
+              <Grid item xs={12} className={classes.meta}>
+                  <Grid container>
+                      <Grid item xs={4}>
+                          <div style={{ marginBottom: "10px", fontWeight: "600" }}>Duration</div>
+                          <div>{card.timeNeeded.min}-{card.timeNeeded.max} min</div>
+                      </Grid>
+                      <Grid item xs={4}>
+                          <div style={{ marginBottom: "10px", fontWeight: "600" }}>Group</div>
+                          <div>&lt; NaN persons</div>
+                      </Grid>
+                      <Grid item xs={4}>
+                          <div style={{ marginBottom: "10px", fontWeight: "600" }}>Difficulty</div>
+                          {Array.apply(null, { length: card.difficulty }).map(() => (
+                            <Box enabled={true}/>
+                          ))}
+                          {Array.apply(null, { length: 3 - card.difficulty }).map(() => (
+                            <Box enabled={false}/>
+                          ))}
+                      </Grid>
+                  </Grid>
+              </Grid>
           </Grid>
       </div>
     )
+}
+
+function OurDivider(){
+    return <div
+      style={{
+          width: "100%",
+          height: "2px",
+          backgroundColor: "#aedad7",
+          margin: "0 40px 20px 40px"
+      }}
+    />
 }
 
 function Box({ enabled }) {
@@ -158,7 +189,7 @@ function Box({ enabled }) {
         style={{
             height: "15px",
             width: "15px",
-            backgroundColor: enabled ? "green" : "grey",
+            backgroundColor: enabled ? "#66bdb5" : "#e5e4e4",
             display: "inline-block",
             margin: "0 5px"
         }}
@@ -172,8 +203,8 @@ function Stage({ stage }) {
         style={{
             backgroundColor: "#66bdb5",
             margin: "0 5px",
-            padding: "5px",
-            borderRadius: "5px"
+            padding: "8px",
+            color: "white"
         }}
       >
       {stage}
