@@ -14,4 +14,5 @@ plus:
   - n/a
 difficulty: 1
 materials:
-  - Grafico di gradimento, e grafico per conteggio voti.
+  - FlipChart
+  - Markers
