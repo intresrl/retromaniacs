@@ -3,6 +3,8 @@ import Grid from "@material-ui/core/Grid"
 import { makeStyles } from "@material-ui/core"
 import Dialog from "@material-ui/core/Dialog"
 import Icon from "@material-ui/core/Icon"
+import Button from "@material-ui/core/Button";
+import DialogActions from "@material-ui/core/DialogActions";
 
 const useStyles = makeStyles({
     root: props => ({
@@ -69,7 +71,14 @@ export default function Card(props) {
 
     const classes = useStyles()
     const [modalState, setModalState] = useState(false); // {open: boolean, cardId : string}
+
     const isBlack = card.stage.includes(stage);
+
+    
+    const selectCard = () => {
+        props.onClick();
+        setModalState(false)
+    }
 
     return (
       <div className={classes.root} style={{backgroundColor: isBlack ? "rgba(128,128,128,0.4)" : "white"}}>
@@ -124,6 +133,14 @@ export default function Card(props) {
                       </Grid>
                   </Grid>
               </Grid>
+              <DialogActions>
+                  <Button onClick={(e) =>setModalState(false)} style={{backgroundColor: "rgb(102, 189, 181)", color:"white"}}>
+                      Chiudi
+                  </Button>
+                  <Button onClick={(e) =>selectCard()} style={{backgroundColor: "rgb(102, 189, 181)", color:"white"}}>
+                      Seleziona
+                  </Button>
+              </DialogActions>
           </Dialog>
 
           <Icon className={classes.topRight} onClick={(e) => {
