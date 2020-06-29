@@ -5,13 +5,13 @@ import Dialog from "@material-ui/core/Dialog"
 import Icon from "@material-ui/core/Icon"
 
 const useStyles = makeStyles({
-    root: {
+    root: props => ({
         maxWidth: "300px",
         minWidth: "300px",
         border: "1px solid grey",
         padding: "5px",
         position: "relative"
-    },
+    }),
     name: {
         textAlign: "center",
         marginBottom: "20px",
@@ -60,15 +60,19 @@ const useStyles = makeStyles({
 })
 
 export default function Card(props) {
+
     const {
         card,
-        onClick
+        onClick,
+      stage
     } = props
+
     const classes = useStyles()
     const [modalState, setModalState] = useState(false); // {open: boolean, cardId : string}
+    const isBlack = card.stage.includes(stage);
 
     return (
-      <div className={classes.root}>
+      <div className={classes.root} style={{backgroundColor: isBlack ? "rgba(128,128,128,0.4)" : "white"}}>
           <Dialog open={modalState} onClose={(e) => {
               e.stopPropagation()
               setModalState(false)
