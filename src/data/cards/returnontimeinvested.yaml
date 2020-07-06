@@ -3,7 +3,7 @@ name: Return on Time Invested
 stage:
   - close-the-retrospective
 timeNeeded:
-  min: 10
+  min: 0
   max: 10
 steps:
   - Prepara il grafico per il ROTI
