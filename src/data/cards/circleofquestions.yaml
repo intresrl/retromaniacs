@@ -1,0 +1,20 @@
+---
+name: Circle of questions
+stage:
+  - decide-what-to-do
+timeNeeded:
+  min: 30
+  max: 60
+steps:
+  - Invitate i membri a sedersi in cerchio, idealmente si dispongono le sedie in cerchio senza un tavolo in mezzo
+  - "Introducete l'attività dicendo: 'a volte il miglior modo di trovare risposte è quello di farsi delle domande. Faremo delle domande per capire come procedere in base a ciò che abbiamo visto in questa retrospettiva. Gireremo in tondo finché non siamo soddisfatti o finché non finisce il tempo'"
+  - Giratevi verso la persona alla vostra sinistra e fategli/le una domanda. Questa risponderà in base alle sue conoscenze e alla sua prospettiva
+  - Una volta che questa avrà risposto toccherà a lui/lei fare una domanda alla persona alla sua sinistra, la domanda dovrà essere pertinente con il tema introdotto da voi
+  - Si continuerà a girare finché tutti saranno soddisfatti e le loro domande avranno avuto risposta
+  - Durante l'attività prendi nota di quanto discusso per poterne discutere, se necessario, in altra sede
+needSolved: Decidere cosa fare in base ai dati acquisiti in precedenza
+plus:
+  - Aiuta le persone a parlarsi
+difficulty: 1
+materials:
+  - FlipChart
