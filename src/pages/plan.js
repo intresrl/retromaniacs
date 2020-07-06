@@ -44,6 +44,7 @@ export default function Home() {
   const [currentRetro, setCurrentRetro] = useState({name: "New Retrospective", date: new Date()})
 
   const loadRetro = (retro) => {
+    setBadgeInvisible(true)
       const sections = retro.sections
     setCurrentRetro(retro)
     setCard1(sections.card1)
@@ -53,13 +54,17 @@ export default function Home() {
     setCard5(sections.card5)
   }
 
+  const editTitleDetail = (retro) => {
+    setCurrentRetro(retro);
+    setBadgeInvisible(false)
+  }
 
   return <div>
       <Helmet>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
       </Helmet>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems:"center"}}>
-          <RetroTitle currentRetro={currentRetro} setCurrentRetro={setCurrentRetro}/>
+          <RetroTitle currentRetro={currentRetro} setCurrentRetro={editTitleDetail}/>
         <div>
           <Button variant="contained" color="primary" onClick={() => setLoadOpened(true)}>Load</Button>
           <Badge color="secondary" variant="dot" invisible={badgeInvisible}>
