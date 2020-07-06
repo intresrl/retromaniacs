@@ -27,8 +27,6 @@ const LoadDialog = (props) => {
       <List component="nav" aria-label="secondary mailbox folders">
         {retro.map((r) => {
           const label = `${r.name} (${r.date.toLocaleDateString()})`;
-          console.log(label)
-
         return <ListItem key={r.name} button onClick={() => {
               props.onClose()
               props.onSelect(r)
@@ -41,9 +39,6 @@ const LoadDialog = (props) => {
         <Button onClick={onClose} style={{backgroundColor: "rgb(102, 189, 181)", color:"white"}}>
           Chiudi
         </Button>
-        {/*<Button onClick={(e) =>selectCard()} style={{backgroundColor: "rgb(102, 189, 181)", color:"white"}}>*/}
-        {/*  Seleziona*/}
-        {/*</Button>*/}
       </DialogActions>
     </Dialog>
   )
