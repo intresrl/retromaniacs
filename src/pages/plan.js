@@ -40,21 +40,29 @@ export default function Home() {
 
   const [loadOpened, setLoadOpened] = useState(false)
 
+  const [currentRetro, setCurrentRetro] = useState({})
+
   const loadRetro = (retro) => {
       const sections = retro.sections
+    setCurrentRetro(retro)
     setCard1(sections.card1)
     setCard2(sections.card2)
     setCard3(sections.card3)
     setCard4(sections.card4)
     setCard5(sections.card5)
   }
+
+
   return <div>
       <Helmet>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
       </Helmet>
-      <div style={{ display: "flex", justifyContent: "flex-end" }}>
-        <Button variant="contained" color="primary" onClick={() => setLoadOpened(true)}>Load</Button>
-        <Button variant="contained" color="primary" onClick={() => save({ card1, card2, card3, card4, card5, })}>Save</Button>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems:"center"}}>
+        <h1>{currentRetro.name || "New Retrospective"}</h1>
+        <div>
+          <Button variant="contained" color="primary" onClick={() => setLoadOpened(true)}>Load</Button>
+          <Button style={{marginLeft: "5px"}} variant="contained" color="primary" onClick={() => save({ card1, card2, card3, card4, card5, })}>Save</Button>
+        </div>
       </div>
       {loadOpened && <LoadDialog onSelect={loadRetro} onClose={() => setLoadOpened(false)}/>}
       <div>

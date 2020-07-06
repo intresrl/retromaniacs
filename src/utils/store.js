@@ -18,7 +18,6 @@ export const load = async () => {
   const db = await getDb()
   const stuff =await db.getAll(store);
 
-  console.log(stuff)
   return stuff
 }
 
