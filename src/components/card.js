@@ -76,7 +76,7 @@ export default function Card(props) {
 
     
     const selectCard = () => {
-        props.onClick();
+        onClick();
         setModalState(false)
     }
 
@@ -145,10 +145,10 @@ export default function Card(props) {
 
           <Icon className={classes.topRight} onClick={(e) => {
               e.stopPropagation()
-              setModalState(true)
-          }}>info</Icon>
+              selectCard()
+          }}>check_circle_outline</Icon>
 
-          <Grid container style={{marginTop: "15px"}} onClick={onClick}>
+          <Grid container style={{marginTop: "15px"}} onClick={(e) => setModalState(true)}>
               <Grid item xs={12} className={classes.name}>
                   {card.name}
               </Grid>
