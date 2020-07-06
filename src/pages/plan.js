@@ -1,16 +1,20 @@
-import React, {useState} from "react"
-import {useStaticQuery, graphql} from "gatsby"
-import Card from "../components/card";
+import React, { useState } from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import Card from "../components/card"
 import "../../static/style.css"
 import Helmet from "react-helmet"
 import Icon from "@material-ui/core/Icon"
-import AppBar from "@material-ui/core/AppBar"
 import Button from "@material-ui/core/Button"
-import { openDB } from "idb"
-import { load, save } from "../utils/store"
+import { save } from "../utils/store"
 import LoadDialog from "../components/LoadDialog"
+import TextField from "@material-ui/core/TextField"
+import { KeyboardDatePicker, MuiPickersUtilsProvider } from "@material-ui/pickers"
+import DateFnsUtils from "@date-io/date-fns"
 
 export default function Home() {
+
+
+
     const data = useStaticQuery(graphql`
         query MyOtherQuery {
           allCardsYaml {
@@ -40,21 +44,48 @@ export default function Home() {
 
   const [loadOpened, setLoadOpened] = useState(false)
 
+  const [currentRetro, setCurrentRetro] = useState({name: "New Retrospective", date: new Date()})
+
   const loadRetro = (retro) => {
       const sections = retro.sections
+    setCurrentRetro(retro)
     setCard1(sections.card1)
     setCard2(sections.card2)
     setCard3(sections.card3)
     setCard4(sections.card4)
     setCard5(sections.card5)
   }
+
+
   return <div>
       <Helmet>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
       </Helmet>
-      <div style={{ display: "flex", justifyContent: "flex-end" }}>
-        <Button variant="contained" color="primary" onClick={() => setLoadOpened(true)}>Load</Button>
-        <Button variant="contained" color="primary" onClick={() => save({ card1, card2, card3, card4, card5, })}>Save</Button>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems:"center"}}>
+        <div>
+          <TextField label="Retro Name" value={currentRetro.name} onChange={event => setCurrentRetro({...currentRetro, name: event.target.value})
+          }/>
+          <MuiPickersUtilsProvider utils={DateFnsUtils}>
+            <KeyboardDatePicker
+              disableToolbar
+              variant="inline"
+              format={"dd/MM/yyyy"}
+              margin="normal"
+              id="date-picker"
+              value={currentRetro.date}
+              onChange={(date) => {
+                setCurrentRetro({...currentRetro, date});
+              }}
+              KeyboardButtonProps={{
+                'aria-label': 'change date',
+              }}
+            />
+          </MuiPickersUtilsProvider>
+        </div>
+        <div>
+          <Button variant="contained" color="primary" onClick={() => setLoadOpened(true)}>Load</Button>
+          <Button style={{marginLeft: "5px"}} variant="contained" color="primary" onClick={() => save({...currentRetro, sections: { card1, card2, card3, card4, card5, }})}>Save</Button>
+        </div>
       </div>
       {loadOpened && <LoadDialog onSelect={loadRetro} onClose={() => setLoadOpened(false)}/>}
       <div>

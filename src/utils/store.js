@@ -1,4 +1,5 @@
 import { openDB } from "idb"
+
 const name = "retromaniacs"
 const store = "retrospectives"
 const version = 1
@@ -16,21 +17,12 @@ const getDb = async () => {
 
 export const load = async () => {
   const db = await getDb()
-  const stuff =await db.getAll(store);
-
-  console.log(stuff)
-  return stuff
+  return await db.getAll(store)
 }
 
 
-export const save = async (sections) => {
+export const save = async (retro) => {
   const db = await getDb()
-  const retroId = "questa"
-  const retro = {
-    name: retroId,
-    date: new Date(),
-    sections
-  }
+  const retroId = retro.name
   await db.put(store, retro, retroId);
-
 }
