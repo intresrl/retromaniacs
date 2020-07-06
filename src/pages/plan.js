@@ -4,13 +4,24 @@ import Card from "../components/card";
 import "../../static/style.css"
 import Helmet from "react-helmet"
 import Icon from "@material-ui/core/Icon"
-import AppBar from "@material-ui/core/AppBar"
 import Button from "@material-ui/core/Button"
-import { openDB } from "idb"
-import { load, save } from "../utils/store"
+import { save } from "../utils/store"
 import LoadDialog from "../components/LoadDialog"
+import TextField from "@material-ui/core/TextField";
+import {
+    MuiPickersUtilsProvider,
+    KeyboardDatePicker,
+} from '@material-ui/pickers';
+import DateFnsUtils from '@date-io/date-fns';
 
 export default function Home() {
+
+    const [selectedDate, setSelectedDate] = React.useState(new Date('2014-08-18T21:11:54'));
+
+    const handleDateChange = (date) => {
+        setSelectedDate(date);
+    };
+    
     const data = useStaticQuery(graphql`
         query MyOtherQuery {
           allCardsYaml {
@@ -53,6 +64,24 @@ export default function Home() {
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
       </Helmet>
       <div style={{ display: "flex", justifyContent: "flex-end" }}>
+
+        <TextField label="Retro Name" />
+          <MuiPickersUtilsProvider utils={DateFnsUtils}>
+              <KeyboardDatePicker
+                  disableToolbar
+                  variant="inline"
+                  format="dd/MM/yyyy"
+                  margin="normal"
+                  id="date-picker-inline"
+                  label="Date picker inline"
+                  value={selectedDate}
+                  onChange={handleDateChange}
+                  KeyboardButtonProps={{
+                      'aria-label': 'change date',
+                  }}
+              />
+          </MuiPickersUtilsProvider>
+        
         <Button variant="contained" color="primary" onClick={() => setLoadOpened(true)}>Load</Button>
         <Button variant="contained" color="primary" onClick={() => save({ card1, card2, card3, card4, card5, })}>Save</Button>
       </div>
