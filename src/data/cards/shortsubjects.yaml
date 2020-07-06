@@ -1,0 +1,18 @@
+﻿---
+name: Short Subjects
+stage:
+  - decide-what-to-do
+timeNeeded:
+  min: 20
+  max: 30
+steps:
+  - Prepara 2/3 flipcharts con titoli che rappresentano gli input per la discussione come "What Worked Well/Do Differently Next Time", "Keep/Drop/Add", "Stop Doing/Start Doing/Keep Doing"   
+  - Raccogli idee attraverso il brainstorming
+  - Chiedi al team di identificare le idee che hanno potenzialmente più benefici. Guida una breve discussione aperta e poi fai votare.
+  - Mantieni la lista di idee raccolte per retrospettive future, in modo da identificare possibili aree con problemi ricorrenti. 
+needSolved: Aiuta ad individuare differenti prospettive su come si sta comportando il team e può contribuire a rendere più varie retrospettive brevi.
+plus:
+  - N/A
+difficulty: 1
+materials:
+  - FlipChart
