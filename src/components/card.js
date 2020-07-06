@@ -81,7 +81,7 @@ export default function Card(props) {
     }
 
     return (
-      <div className={classes.root} style={{backgroundColor: isBlack ? "rgba(128,128,128,0.4)" : "white"}}>
+      <div className={classes.root} style={{backgroundColor: isBlack ? "rgba(128,128,128,0.4)" : "white", userSelect: "none"}}>
           <Dialog open={modalState} onClose={(e) => {
               e.stopPropagation()
               setModalState(false)
