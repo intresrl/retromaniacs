@@ -2,16 +2,17 @@
 name: Temperature Reading
 stage:
   - set-the-stage
-  - close-the-retrospective
 timeNeeded:
   min: 5
   max: 30
 steps:
-  - Spiegazione e introduzione al poster e le 5 categorie.
-  - lasciare tempo per far parlare la gente (contare mentalmente)
-needSolved: Fare il punto e allinearsi.
+  - Prepara il termometro sul FlipChart
+  - Introduci il termometro ad i partecipanti e spiega che più si collocano in alto nella temperatura del termometro, più lo sprint è stato tedioso per il partecipante
+  - Raccogliere le varie temperature dai partecipanti
+  - Chiudi l'attività dopo che tutti hanno segnato la loro "temperatura"
+needSolved: Indivuduare se ci sono state delle criticità all'interno del team
 plus:
-  - Fornisce feedback al facilitatore.
+  - Aiuta i partecipanti a esprimere le emozioni
 difficulty: 1
 materials:
   - FlipChart

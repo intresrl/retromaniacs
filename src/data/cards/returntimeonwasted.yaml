@@ -6,12 +6,13 @@ timeNeeded:
   min: 10
   max: 10
 steps:
-  - Spiegazione ed introduzione ai grafici.
-  - Raccogliere i voti chiedendo a tutti a turno.
+  - Prepara il grafico per il ROTI
+  - Introduci l'attività ad i partecipanti e spiega il grafico
+  - Raccogli i voti dai partecipanti e segnali sul grafico
   - Chiedere approfondimenti sul feedback (cosa è andato bene, e cosa male)
-needSolved: Feedback dalla prospettiva dei membri del team sull'efficacia della retrospettiva.
+needSolved: Feedback dalla prospettiva dei membri del team sull'efficacia della retrospettiva
 plus:
-  - n/a
+  - Aiuta a migliorare la retrospettiva
 difficulty: 1
 materials:
   - FlipChart

@@ -6,18 +6,16 @@ timeNeeded:
   min: 20
   max: 30
 steps:
-  - Introduzione
-  - Dare tempo per scrivere i postit legati alle varie categorie
-  - Ogni persona attacca i postit sul poster
-  - Far raggruppare i postit in cluster
-  - Far dare un nome da ogni cluster
-  - Debriefing
-needSolved: Far uscire fatti legati ad emozioni
+  - Introduci l'attività ad i partecipanti
+  - Dare 5-7 minuti di tempo per scrivere i Post-It e attaccarli al Flipchart
+  - Raggruppare i Post-It se necessario
+  - Effettuare una discussione con i partecipanti di quanto è stato scritto
+needSolved: Aiuta il team ad esprimere le emozioni
 plus:
   - Mette in mostra l'aspetto emotivo
   - Come variazione, usare Prouds e Sorries in casi di tensioni emotive o conflitti noti
 difficulty: 1
 materials:
-  - Postit colorati
-  - FlipChart
+  - Post-It colorati
+  - Flipchart
   - Markers

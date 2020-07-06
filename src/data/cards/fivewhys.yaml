@@ -6,16 +6,16 @@ timeNeeded:
   min: 15
   max: 20
 steps:
-  - Introdurre le problematiche che il team ha identificato.
-  - Dividere il team in coppie o piccoli gruppi (max 4pp).
-  - Per ogni problematica, una persona di un gruppo chiede ad un altro membro del gruppo perchè è accaduto il problema X.
-  - Per ogni risposta ottenuta, chiedere il perchè è accaduto ciò (fino a un massimo di 4-5 volte).
-  - Registrare la quarta/quinta risposta.
-  - Far esporre al team quello che hanno scoperto.
+  - Introdurre le problematiche che il team ha identificato
+  - Dividere il team in coppie o piccoli gruppi (max 4pp)
+  - Per ogni problematica, una persona di un gruppo chiede ad un altro membro del gruppo perchè è accaduto il problema X
+  - Per ogni risposta ottenuta, chiedere il perchè è accaduto ciò (fino a un massimo di 4-5 volte)
+  - Registrare la quarta/quinta risposta
+  - Far esporre al team quello che hanno scoperto
   - Usare quanto scoperto come input per il "decide what to do"
-needSolved: Capire la/le causa/e scatenante/i di un problema.
+needSolved: Capire le cause scatenanti di un problema
 plus:
-  - "Si può utilizzare in combinazione con: Patterns and Shifts"
+  - Aiuta il team ad indentificare le cause di un problema
 difficulty: 1
 materials:
-  - n/a
+  - N/A

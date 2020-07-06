@@ -6,12 +6,12 @@ timeNeeded:
   min: 5
   max: 10
 steps:
-  - Spiegazione ed introduzione ai grafici.
-  - Scrivere i feed back sui post-it, e agganciarli al grafico desiderato.
-  - Incontrare i membri del team al termine per eventuali chiarimenti.
-needSolved: Feedback dai membri del team per migliorare le attività.
+  - Prepara il FlipChart e introduci l'attività
+  - Chiedi ad i partecipanti di dare feedback sulla retrospettiva e riportali sotto forma di Post-It sul FlipChart
+  - Chiedi ad i partecipanti di esprimere le loro opinioni una volta finita la retrospettiva
+needSolved: Aiuta il facilitatore a migliorare la qualità delle retrospettive
 plus:
-  - n/a
+  - Migliora le successive retrospettive
 difficulty: 1
 materials:
   - FlipChart

@@ -6,13 +6,14 @@ timeNeeded:
   min: 10
   max: 20
 steps:
-  - Introduzione, tempi e grafico.
-  - Ognuno grida punti di forza (plus) e miglioramento (delta), il f. li trascrive.
-  - Attendere un pochino.
-  - Ringraziare per il feedback.
-needSolved: "Retrospettiva sulla retrospettiva: identificare punti di forza e di miglioramento"
+  - Indica il topic dell'attività, ovvero analizzare la retrospettiva per migliorarla
+  - Prepara il grafico dove segnare i punti di forza
+  - Ogni partecipante indica i punti di forza della retrospettiva e i cambiamenti che vorrebbe effettuare
+  - Chiudi l'attività dopo un periodo di tempo dove nessuno parla (30-60 secondi)
+needSolved: Migliora la qualità della retrospettiva
 plus:
-  - Fornisce feedback al facilitatore.
+  - Fornisce feedback al facilitatore
+  - Aiuta il team a migliorarsi
 difficulty: 1
 materials:
   - Flipchart
