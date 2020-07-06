@@ -81,7 +81,7 @@ export default function Card(props) {
     }
 
     return (
-      <div className={classes.root} style={{backgroundColor: isBlack ? "rgba(128,128,128,0.4)" : "white"}}>
+      <div className={classes.root} style={{backgroundColor: isBlack ? "rgba(128,128,128,0.4)" : "white", userSelect: "none"}}>
           <Dialog open={modalState} onClose={(e) => {
               e.stopPropagation()
               setModalState(false)
@@ -113,15 +113,11 @@ export default function Card(props) {
                   </Grid>
                   <Grid item xs={12} className={classes.meta}>
                       <Grid container>
-                          <Grid item xs={4}>
+                          <Grid item xs={6}>
                               <div style={{ marginBottom: "10px", fontWeight: "600" }}>Duration</div>
                               <div>{card.timeNeeded.min}-{card.timeNeeded.max} min</div>
                           </Grid>
-                          <Grid item xs={4}>
-                              <div style={{ marginBottom: "10px", fontWeight: "600" }}>Group</div>
-                              <div>&lt; NaN persons</div>
-                          </Grid>
-                          <Grid item xs={4}>
+                          <Grid item xs={6}>
                               <div style={{ marginBottom: "10px", fontWeight: "600" }}>Difficulty</div>
                               {Array.apply(null, { length: card.difficulty }).map(() => (
                                 <Box enabled={true}/>
@@ -169,15 +165,11 @@ export default function Card(props) {
               <OurDivider />
               <Grid item xs={12} className={classes.meta}>
                   <Grid container>
-                      <Grid item xs={4}>
+                      <Grid item xs={6}>
                           <div style={{ marginBottom: "10px", fontWeight: "600" }}>Duration</div>
                           <div>{card.timeNeeded.min}-{card.timeNeeded.max} min</div>
                       </Grid>
-                      <Grid item xs={4}>
-                          <div style={{ marginBottom: "10px", fontWeight: "600" }}>Group</div>
-                          <div>&lt; NaN persons</div>
-                      </Grid>
-                      <Grid item xs={4}>
+                      <Grid item xs={6}>
                           <div style={{ marginBottom: "10px", fontWeight: "600" }}>Difficulty</div>
                           {Array.apply(null, { length: card.difficulty }).map(() => (
                             <Box enabled={true}/>
@@ -235,15 +227,15 @@ function Stage({ stage }) {
 
 function Materials({ materials }) {
     return (
-      <div>
-          <ul style={{ padding: "0" }}>
-              {materials.map(m => (
-                <>
-                    &bull;
-                    <li style={{ display: "inline", margin: "0 5px" }}>{m}</li>
-                </>
-              ))}
-          </ul>
-      </div>
+      materials ? <div>
+        <ul style={{ padding: "0" }}>
+            {materials.map(m => (
+              <>
+                  &bull;
+                  <li style={{ display: "inline", margin: "0 5px" }}>{m}</li>
+              </>
+            ))}
+        </ul>
+    </div> : null
     )
 }
