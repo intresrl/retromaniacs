@@ -7,14 +7,9 @@ import Icon from "@material-ui/core/Icon"
 import Button from "@material-ui/core/Button"
 import { save } from "../utils/store"
 import LoadDialog from "../components/LoadDialog"
-import TextField from "@material-ui/core/TextField"
-import { KeyboardDatePicker, MuiPickersUtilsProvider } from "@material-ui/pickers"
-import DateFnsUtils from "@date-io/date-fns"
+import RetroTitle from "../components/retroTitle"
 
 export default function Home() {
-
-
-
     const data = useStaticQuery(graphql`
         query MyOtherQuery {
           allCardsYaml {
@@ -62,26 +57,7 @@ export default function Home() {
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
       </Helmet>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems:"center"}}>
-        <div>
-          <TextField label="Retro Name" value={currentRetro.name} onChange={event => setCurrentRetro({...currentRetro, name: event.target.value})
-          }/>
-          <MuiPickersUtilsProvider utils={DateFnsUtils}>
-            <KeyboardDatePicker
-              disableToolbar
-              variant="inline"
-              format={"dd/MM/yyyy"}
-              margin="normal"
-              id="date-picker"
-              value={currentRetro.date}
-              onChange={(date) => {
-                setCurrentRetro({...currentRetro, date});
-              }}
-              KeyboardButtonProps={{
-                'aria-label': 'change date',
-              }}
-            />
-          </MuiPickersUtilsProvider>
-        </div>
+          <RetroTitle currentRetro={currentRetro} setCurrentRetro={setCurrentRetro}/>
         <div>
           <Button variant="contained" color="primary" onClick={() => setLoadOpened(true)}>Load</Button>
           <Button style={{marginLeft: "5px"}} variant="contained" color="primary" onClick={() => save({...currentRetro, sections: { card1, card2, card3, card4, card5, }})}>Save</Button>
