@@ -1,4 +1,3 @@
----
 name: Appreciations
 stage:
   - close-the-retrospective
@@ -6,10 +5,10 @@ timeNeeded:
   min: 5
   max: 30
 steps:
-  - Spiegazione.
-  - "Esempio di appreciation: il F. inizia con un esempio vero."
-  - Chi vuole può parlare a ruota libera
-needSolved: Permettere di notare e apprezzarsi a vicenda. Terminare la retrospettiva positivamente.
+  - Inizia l'attività apprezzando sinceramente un membro del team
+  - Invita gli altri membri del team ad apprezzarsi a vicenda
+  - Chiudi l'attività dopo un periodo di tempo dove nessuno parla (30-60 secondi)
+needSolved: Permettere di terminare la retrospettiva positivamente
 plus:
   - Resetta il mood se i toni della retrospettiva sono stati accesi.
 difficulty: 1

@@ -7,14 +7,15 @@ timeNeeded:
   min: 30
   max: 60
 steps:
-  - Dividere in gruppi.
-  - "1 round: ognuno scrive idee sui postit (almeno 5)."
+  - Dividi in gruppi i partecipanti e informa i partecipanti dell'argomento di discussione
+  - "1 round: ogni partecipante scrive su dei Post-It delle idee"
   - Dopo 5 min passi i postit a destra e ognuno scrive idee che nascono da quelle prima o che le estendono.
-  - Ripeti fino a quanto vuoi (fino a un giro completo).
+  - Ripeti fino a fare un giro completo
   - L'output viene letto e discusso nelle fasi successive.
 needSolved: Generare idee di azioni, scoprire argomenti importanti circa la storia del progetto.
 plus:
   - Lascia spazio a tutti.
 difficulty: 1
 materials:
-  - Carta e penna
+  - Carta
+  - Markers

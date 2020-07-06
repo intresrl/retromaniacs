@@ -6,14 +6,14 @@ timeNeeded:
   min: 10
   max: 15
 steps:
-  - Spiegare il significato dei 4 termini (Explorer, Shopper, Vacationer, Prisoner).
-  - Ognuno segna, in maniera anonima, quale dei quattro lo rappresenta di più.
-  - Collezionare i risultati.
-  - Condurre una breve discussione su quanto emerso.
-needSolved: Farsi un idea sulla mentalità con cui le persone affrontano la retrospettiva.
+  - Inizia l'attività spiegando il significato dei 4 termini (Explorer, Shopper, Vacationer, Prisoner)
+  - Chiedi a tutti i partecipanti di sengnare su un Post-It la categoria a cui pensano di appartenere in maniera anonima
+  - Collezionare i risultati e piazzali su un flipchart raggruppandoli per categoria
+  - Conduci una breve discussione aperta su quanto risultato
+needSolved: Aiuta il facilitatore a farsi un idea sulla mentalità con cui le persone affrontano la retrospettiva
 plus:
-  - Aiuta a comprendere il mood delle persone.
-  - Artificioso
+  - Aiuta a comprendere il mood delle persone
 difficulty: 2
 materials:
-  - Carta e penna
+  - Post-It
+  - Markers

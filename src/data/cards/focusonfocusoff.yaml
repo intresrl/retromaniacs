@@ -6,14 +6,16 @@ timeNeeded:
   min: 8
   max: 12
 steps:
-  - Preparare 4 coppie di frasi su modalità di dialogo produttivo e improduttivo.
-  - Dividere in gruppi (massimo 4 persone per gruppo).
-  - Ciascun gruppo discute una Focus on/Focus off.
-  - Ciascun gruppo riporta al resto del team.
-needSolved: Porre il focus sulla comunicazione produttiva.
+  - Preparare 4 coppie di frasi su modalità di dialogo produttivo e improduttivo
+  - Dividere in gruppi i partecipanti (massimo 4 partecipanti per gruppo)
+  - Ciascun gruppo discute una frase "Focus on / Focus off"
+  - Ciascun gruppo riporta al resto del team
+needSolved: Porre il focus sulla comunicazione produttiva
 plus:
-  - Aiuta ad evitare di giudicare o incolpare.
-  - Allinea il team sull'atteggiamento da tenere.
+  - Aiuta ad evitare di giudicare o incolpare
+  - Allinea il team sull'atteggiamento da tenere
 difficulty: 1
 materials:
-  - Focus on/Focus off preparati
+  - Frasi preparate
+  - Carta
+  - Markers

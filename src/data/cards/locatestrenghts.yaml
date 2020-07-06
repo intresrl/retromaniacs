@@ -6,14 +6,12 @@ timeNeeded:
   min: 15
   max: 40
 steps:
-  - Introduzione
-  - Formare coppie, possibilmente di persone che non si conoscono e fornire le domande
-  - Il primo fa le domande al secondo e segna i punti chiave
-  - Cambiare ruoli
-  - Proseguire con Identify Themes
+  - Introduci l'attività
+  - Dividi i partecipanti a coppie
+  - Chiedi ad ogni gruppo di scovare dei punti di forza a proposito di qualcosa andato bene in questo sprint e di generare delle azioni per trarre beneficio da questi punti
+  - Raccogli quanto generato e discutine con i partecipanti nella fase di "Decide what to do"
 needSolved: Raccogliere fatti ed emozioni su lungo periodo, identificando punti di forza
 plus:
-  - In combinazione con identify themes a seguire, per generare insights (ulteriori 20-40 minuti)
   - Fornisce bilanciamento quando l'iterazione è andata male
 difficulty: 1
 materials:

@@ -1,4 +1,3 @@
----
 name: Brainstorming / Filtering
 stage:
   - generate-insight
@@ -6,18 +5,16 @@ timeNeeded:
   min: 40
   max: 60
 steps:
-  - Introdurre l'attività.
-  - Descrivere le linee guida.
-  - Free for all / Round Robin / timeboxed.
-  - Decidere i filtri da applicare (4-8 max) e usare i 4 più votati per alzata di mano.
-  - Applicare i filtri per ogni idea singolarmente.
-  - Separare le idee che passano tutti i filtri da quelle che non li passano.
-  - Far decidere quali tra le idee portare alla fase "decide what to do".
-needSolved: Generare un grande numero di idee e filtrarle in base a dei criteri predefiniti.
+  - Introduci l'attività stabilendo le linee guida per il brainstorming
+  - Dai 5-10 minuti di tempo ad i partecipanti per pensare e/o scrivere delle idee
+  - Chiedi ad ogni partecipante le sue idee e scrivile sul Flipchart
+  - Decidi insieme al team i filtri da applicare alle idee, scegline tra questi 3/4
+  - Per ogni idea applica i filtri
+  - Scegli tra le idee filtrate una (o un paio) di idee da portare avanti con il team
+needSolved: Generare un grande numero di idee e filtrarle in base a dei criteri predefiniti
 plus:
-  - Generazione di molte idee.
-  - Tutti dicono la loro.
-  - Non incoraggia l'interazione
+  - Generazione di molte idee
+  - Tutti dicono la loro
 difficulty: 2
 materials:
   - Flipchart

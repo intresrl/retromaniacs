@@ -6,13 +6,12 @@ timeNeeded:
   min: 5
   max: 10
 steps:
-  - Poni una domanda a cui ogni persona puo' rispondere con una parola o una frase breve. Ad esempio 'In una parola o due, quali sono le tue speranze per la retrospettiva?'
-  - Si può dire 'passo'.
-  - Ascolta le risposte di ognuno senza offrire complimenti.
-needSolved: Migliorare il focus sulla retrospettiva.
+  - Scegli una domanda a cui ogni persona puo' rispondere con una parola o una frase breve, ad esempio 'In una parola o due, quali sono le tue speranze per la retrospettiva?' e poni al team la domanda
+  - Indirizza i problemi che possono sorgere dalle risposte discutendoli o semplicemente appuntandoli per discutenrne successivamente
+  - Una volta che tutti avranno parlato chiudi l'attività
+needSolved: Migliorare il focus sulla retrospettiva
 plus:
-  - Non incentiva le persone che non vogliono parlare a farlo.
-  - Immediatezza e facilità d'uso.
+  - Immediatezza e facilità d'uso
 difficulty: 1
 materials:
   - Domanda da porre
