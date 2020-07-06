@@ -19,6 +19,7 @@
     "gatsby-plugin-material-ui": "^2.1.9",
     "gatsby-source-filesystem": "^2.3.8",
     "gatsby-transformer-yaml": "^2.4.2",
+    "idb": "^5.0.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0"
